@@ -3,10 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-const Home: NextPage = () => {
+const AboutMe: NextPage = () => {
   return (
-    <div>This will be the home page</div>
+    <div>This will be the About me page</div>
   )
 }
 
-export default Home
+export default AboutMe;
