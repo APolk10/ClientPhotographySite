@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import styles from '../styles/navBar.module.css';
 
 function NavBar() {
   let styleNav = {
@@ -14,7 +15,7 @@ function NavBar() {
   }
 
   return (
-    <div id="nav-bar-menu-selector" style={styleNav}>
+    <div id="nav-bar-menu-selector" className={styles.navBarBox} style={styleNav}>
         <Navbar bg="light" expand={false} className="mb-3">
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />

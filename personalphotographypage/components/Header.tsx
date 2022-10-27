@@ -1,8 +1,15 @@
 import NavBar from './NavBar'
+import styles from '../styles/header.module.css'
 
 function Header() {
   return (
-    <NavBar />
+    <div>
+      <div className={styles.headerBanner}>
+        McMillan Photography
+        <NavBar />
+      </div>
+
+    </div>
   )
 }
 
