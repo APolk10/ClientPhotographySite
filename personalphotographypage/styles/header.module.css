@@ -3,7 +3,9 @@
   font-style: italic;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 2vh;
   margin-left: 10vw;
+  margin-right: 2vw;
   font-size: 2vw;
   align-items: center;
   height: 5vh;

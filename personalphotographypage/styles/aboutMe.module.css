@@ -1,5 +1,11 @@
 .headshot {
   display: flex;
-  margin: 8vw;
-  margin-left: 60vw;
+  margin-top: 15vh;
+}
+.data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10vw;
+  justify-content: center;
 }
