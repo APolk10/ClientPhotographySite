@@ -1,7 +1,5 @@
 export default function ContactFooter() {
   return (
-    <>
-      <div>Contact Footer</div>
-    </>
+    <div id="contact-footer">Contact Tim</div>
   )
 }
