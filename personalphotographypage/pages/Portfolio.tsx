@@ -6,7 +6,7 @@ import Header from '../components/Header'
 
 const Portfolio: NextPage = () => {
   return (
-    <Header />
+    <div>Portfolio Pages</div>
   )
 }
 
