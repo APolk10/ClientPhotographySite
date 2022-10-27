@@ -5,8 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Link from 'next/link';
 
-function NavBar() {
+export default function NavBar() {
   let styleNav = {
     display: "flex",
     justifyContent: "flex-end",
@@ -30,8 +31,9 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">About Me</Nav.Link>
+                  <Nav.Link href="/index">Home</Nav.Link>
+                  <Nav.Link href="/AboutMe">About Me</Nav.Link>
+                  <Nav.Link href="/Contact">Contact</Nav.Link>
                   <NavDropdown
                     title="Portfolios"
                     id={`offcanvasNavbarDropdown-expand`}
@@ -52,5 +54,3 @@ function NavBar() {
     </div>
   );
 }
-
-export default NavBar;

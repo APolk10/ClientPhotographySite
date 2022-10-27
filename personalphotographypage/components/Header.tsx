@@ -1,9 +1,7 @@
 import NavBar from './NavBar'
 
-function Header() {
+export default function Header() {
   return (
     <NavBar />
   )
 }
-
-export default Header;
