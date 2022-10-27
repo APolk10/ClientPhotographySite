@@ -6,7 +6,7 @@ import Header from '../components/Header'
 
 const AboutMe: NextPage = () => {
   return (
-    <Header />
+    <div>About me Page</div>
   )
 }
 
