@@ -1,0 +1,14 @@
+#contact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.client_info {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 3vh;
+}
+
+#submit_button {
+  width: 20vw;
+}

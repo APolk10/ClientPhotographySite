@@ -1,7 +1,7 @@
 import NavBar from './NavBar'
 import styles from '../styles/header.module.css'
 
-function Header() {
+export default function Header() {
   return (
     <div>
       <div className={styles.headerBanner}>
@@ -12,5 +12,3 @@ function Header() {
     </div>
   )
 }
-
-export default Header;
