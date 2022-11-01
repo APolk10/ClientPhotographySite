@@ -1,2 +1,2 @@
-# Photagraphy website we made for a close friend to showcase his work and promote his business.
+# Photography website built for a client
 TBD
