@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div>
       <div className={styles.headerBanner}>
-        McMillan Photography
+        <h1 className={styles.title}> McMillan Photography </h1>
         <NavBar />
       </div>
 
