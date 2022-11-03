@@ -11,4 +11,9 @@
   align-items: center;
   font-size: 8vw;
   margin: 1vw;
+  justify-content: space-between;
+  margin-right: 2vw;
+  padding-left: 10vw;
+  height: 8vh;
+  width: 100%;
 }
