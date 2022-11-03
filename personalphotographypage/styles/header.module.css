@@ -2,12 +2,18 @@
   display: flex;
   font-style: italic;
   flex-direction: row;
-  /* background-color: lightgrey; */
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 8vw;
+  margin: 1vw;
   justify-content: space-between;
   margin-right: 2vw;
   padding-left: 10vw;
-  font-size: 2vw;
-  align-items: center;
   height: 8vh;
   width: 100%;
 }

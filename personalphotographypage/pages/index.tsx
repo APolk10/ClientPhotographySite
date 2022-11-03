@@ -8,7 +8,7 @@ import ImageGrid from '../components/ImageGrid';
 const Home: NextPage = () => {
   return (
     <div className={styles.homeContainer}>
-      <h1 className={styles.title}> Tim&apos;s Photography </h1>
+      {/* <h1 className={styles.title}> McMillan Photography </h1> */}
       <ImageGrid />
     </div>
   )

@@ -17,7 +17,7 @@ export default function NavBar() {
 
   return (
     <div id="nav-bar-menu-selector" className={styles.navBarBox} style={styleNav}>
-        <Navbar bg="light" expand={false} className="mb-3">
+        <Navbar bg="white" expand={false} className="mb-3">
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
             <Navbar.Offcanvas
