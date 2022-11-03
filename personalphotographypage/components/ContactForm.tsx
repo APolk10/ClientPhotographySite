@@ -10,7 +10,7 @@ export default function ContactForm() {
       <input type="hidden" name="_captcha" value="false"/>
       <Form.Group className={styles.client_info}>
         <Form.Label>What type of photos do you need?</Form.Label>
-        <Form.Select aria-label="Default select example" name="Genre">
+        <Form.Select aria-label="Default select example" name="Genre" required>
           <option value="1">Wedding</option>
           <option value="2">Portraits</option>
           <option value="3">Family</option>
@@ -19,15 +19,15 @@ export default function ContactForm() {
       </Form.Group>
       <Form.Group className={styles.client_info}>
         <Form.Label>First & Last Name</Form.Label>
-        <Form.Control type="input" name="Name"/>
+        <Form.Control type="input" name="Name" required/>
       </Form.Group>
       <Form.Group className={styles.client_info}>
         <Form.Label>Email</Form.Label>
-        <Form.Control type="text" name="Email"/>
+        <Form.Control type="text" name="Email" required/>
       </Form.Group>
       <Form.Group className={styles.client_info}>
         <Form.Label>Phone Number</Form.Label>
-        <Form.Control type="text" name="Phone"/>
+        <Form.Control type="text" name="Phone" required/>
       </Form.Group>
       <Form.Group className={styles.client_info}>
         <Form.Label>Tell us more about what you are looking for</Form.Label>
