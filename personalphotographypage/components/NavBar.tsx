@@ -12,12 +12,12 @@ export default function NavBar() {
   let styleNav = {
     display: "flex",
     justifyContent: "flex-end",
-    backgroundColor: "white"
+    backgroundColor: "transparent"
   }
 
   return (
     <div id="nav-bar-menu-selector" className={styles.navBarBox} style={styleNav}>
-        <Navbar bg="white" expand={false} className="mb-3">
+        <Navbar bg="transparent" expand={false} className="mb-3">
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
             <Navbar.Offcanvas

@@ -1,3 +1,5 @@
 .navBarBox {
-padding-top: 2vh;
+  padding-top: 2vh;
+  position: relative;
+  left: 1vw;
 }
