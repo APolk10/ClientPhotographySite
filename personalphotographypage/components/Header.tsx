@@ -5,7 +5,8 @@ import { useState, useEffect } from 'react';
 export default function Header() {
   const [mobileView, setMobileView] = useState(false);
   const titleStyle = {
-    paddingLeft:  mobileView ? '8vw' : '2vw'
+    paddingLeft:  mobileView ? '8vw' : '2vw',
+    paddingTop: mobileView ? '1vh' : '2vh'
   }
 
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function Header() {
     <div>
       <div className={styles.headerBanner}>
         <h1 className={styles.title} style={titleStyle}> McMillan Photography </h1>
-        <NavBar />
+        <NavBar mobileView={mobileView} />
       </div>
 
     </div>

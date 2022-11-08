@@ -5,19 +5,25 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import styles from '../styles/header.module.css';
+import styles from '../styles/navBar.module.css';
 import Link from 'next/link';
 
-export default function NavBar() {
-  let styleNav = {
+export default function NavBar({ mobileView }) {
+  let containerStyle = {
     display: "flex",
     justifyContent: "flex-end",
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
+  }
+
+  const navStyle = {
+    position: mobileView ? 'relative' : undefined,
+    bottom: mobileView ? '20px' : undefined,
+    right: mobileView ? '20px' : undefined
   }
 
   return (
-    <div id="nav-bar-menu-selector" className={styles.navBarBox} style={styleNav}>
-        <Navbar bg="transparent" expand={false} className="mb-3">
+    <div id="nav-bar-menu-selector" className={styles.navBarBox} style={containerStyle}>
+        <Navbar bg="transparent" expand={false} className={styles.nav} style={navStyle}>
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
             <Navbar.Offcanvas
