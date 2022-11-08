@@ -24,17 +24,3 @@ const Home: NextPage = () => {
 }
 
 export default Home
-
-export async function getServerSideProps(context) {
-  const { name, shared } = context.query;
-
-  const isShared = shared !== undefined;
-
-  // return the properties so they are available in the `Index` component
-  return {
-    props: {
-      name: decodeURI(name),
-      isShared,
-    },
-  };
-}
