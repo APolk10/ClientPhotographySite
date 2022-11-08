@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import styles from '../styles/navBar.module.css';
+import styles from '../styles/header.module.css';
 import Link from 'next/link';
 
 export default function NavBar() {
