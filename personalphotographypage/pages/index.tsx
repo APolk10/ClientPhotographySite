@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   const [gallery, setGallery] = useState([]);
 
   useEffect(() => {
-    axios.get('https://866426881326464:LFyzvwd3tVNW9MjLdMDxXhxe1Oc@api.cloudinary.com/v1_1/dijhxevwz/resources/image?max_results=100')
+    axios.get('http://localhost:3000/api/hello')
       .then((response) => console.log(response))
       .catch((error) => console.log(error))
   })
