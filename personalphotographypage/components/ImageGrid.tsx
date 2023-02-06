@@ -1,6 +1,6 @@
 import styles from 'styles/ImageGrid.module.css';
 
-export default function ImageGrid() {
+const ImageGrid: React.FC = () => {
   return (
     <div className={styles.imageContainer}>
       <div className={styles.grid}>
@@ -14,3 +14,5 @@ export default function ImageGrid() {
     </div>
   )
 }
+
+export default ImageGrid;

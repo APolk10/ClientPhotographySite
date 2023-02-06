@@ -1,7 +1,7 @@
 import styles from '../styles/contactFooter.module.css';
 import Link from 'next/link';
 
-export default function ContactFooter() {
+const ContactFooter: React.FC = () => {
   return (
     <div className={styles.bar}>
       <p>Mission statement/Short tidbit about Tims work</p>
@@ -10,3 +10,6 @@ export default function ContactFooter() {
     </div>
   )
 }
+
+export default ContactFooter;
+

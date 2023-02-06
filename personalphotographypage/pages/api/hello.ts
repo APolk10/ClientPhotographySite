@@ -17,7 +17,7 @@ export default async function handler(
     optionsSuccessStatus: 200,
   });
 
-  axios.get(process.env.CLOUDINARY_QUERY)
+  axios.get(process.env.CLOUDINARY_QUERY!)
     .then((res) => console.log(res.data.resources))
     .catch((err) => console.log(err));
 }
