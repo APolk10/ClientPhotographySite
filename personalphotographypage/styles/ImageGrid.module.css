@@ -25,6 +25,10 @@
   height: 50vh;
 }
 
+.imageContainer img:hover {
+  cursor: pointer;
+}
+
 .imageContainer div {
   padding: 10%;
   flex: 0.5

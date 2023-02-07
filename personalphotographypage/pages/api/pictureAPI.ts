@@ -28,17 +28,7 @@ export default async function handler(
     optionsSuccessStatus: 200,
   });
 
-    // Get details about the asset
-  // const result = await cloudinary.api.resources(options, (err, response) => {
-  //   if (err) {
-  //     console.error(err);
-  //   } else {
-  //     res.send(response)
-  //   }
-  // });
-  // return result;
-
-  axios.get(process.env.CLOUDINARY_QUERY!)
+  axios.get(`${process.env.CLOUDINARY_QUERY}`)
     .then(response => res.send(response.data))
     .catch(err => console.error(err))
 }
