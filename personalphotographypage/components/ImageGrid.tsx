@@ -29,6 +29,18 @@ const ImageGrid = () => {
       setSubset(gallery.slice(0,10))
     };
   }, []);
+
+  console.log(subset)
+
+  return (
+    <div>
+      {subset.map((image: any) =>
+        <div key={image.asset_id}>
+          <img src={image.url} alt="Tim's Pic"  />
+        </div>
+      )}
+    </div>
+  )
 }
 
 export default ImageGrid;
