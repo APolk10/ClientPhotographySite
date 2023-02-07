@@ -2,8 +2,11 @@ import React from 'react';
 import Header from './Header';
 import ContactFooter from './ContactFooter';
 
+interface LayoutProps {
+  children: any;
+}
 
-export default function Layout({ children }) {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
@@ -12,3 +15,5 @@ export default function Layout({ children }) {
     </>
   )
 }
+
+export default Layout;

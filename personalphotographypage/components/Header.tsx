@@ -2,7 +2,7 @@ import NavBar from './NavBar'
 import styles from '../styles/header.module.css'
 import { useState, useEffect } from 'react';
 
-export default function Header() {
+const Header: React.FC = () => {
   const [mobileView, setMobileView] = useState(false);
   const titleStyle = {
     paddingLeft:  mobileView ? '8vw' : '2vw'
@@ -17,7 +17,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.headerBanner}>
         <h1 className={styles.title} style={titleStyle}> McMillan Photography </h1>
         <NavBar />
@@ -26,3 +26,6 @@ export default function Header() {
     </div>
   )
 }
+
+export default Header;
+

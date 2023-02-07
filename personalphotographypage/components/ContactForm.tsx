@@ -3,7 +3,7 @@ import styles from '../styles/ContactForm.module.css'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-export default function ContactForm() {
+const ContactForm: React.FC = () => {
 
   return (
     <Form id={styles.contact_form} action={`https://formsubmit.co/${process.env.EMAIL}`} method="POST">
@@ -37,3 +37,5 @@ export default function ContactForm() {
     </Form>
   )
 }
+
+export default ContactForm;
