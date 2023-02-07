@@ -1,4 +1,4 @@
-import styles from 'styles/ImageGrid.module.css';
+import styles from 'styles/imageGrid.module.css';
 
 const ImageGrid: React.FC = () => {
   return (
