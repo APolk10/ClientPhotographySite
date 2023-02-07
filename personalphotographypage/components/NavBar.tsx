@@ -33,7 +33,7 @@ export default function NavBar() {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/AboutMe">About Me</Nav.Link>
+                  <Nav.Link href="/Portfolio">Portfolios</Nav.Link>
                   <Nav.Link href="/Contact">Contact</Nav.Link>
                   <NavDropdown
                     title="Portfolios"
