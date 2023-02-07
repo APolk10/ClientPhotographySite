@@ -1,8 +1,13 @@
 .imageContainer {
   display: flex;
-  flex-direction: column;
+  padding: 10%;
   align-content: center;
   width: 100vw;
+}
+
+.portfolios {
+  display: flex;
+  flex-direction: column;
 }
 
 .grid {
@@ -14,7 +19,13 @@
 }
 
 .imageContainer img {
+  flex: 0.5;
   object-fit: cover;
   width: 40vw;
   height: 50vh;
+}
+
+.imageContainer div {
+  padding: 10%;
+  flex: 0.5
 }
