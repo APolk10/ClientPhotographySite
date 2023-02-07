@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from 'styles/ImageGrid.module.css';
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import axios, { AxiosResponse } from 'axios';
 import { resolve } from 'path';
-import Image from 'next/image';
-import { assert } from 'console';
+import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-bootstrap';
 
 interface ImageProps {
   images: any []
@@ -35,7 +36,7 @@ const ImageGrid = () => {
       <div className={styles.imageContainer}>
         <div>
           <h2>Family</h2>
-          These are photos of families that I don't really know
+          These are photos of families that I don&apos;t really know
         </div>
         <img src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040388/Tim%20Photography/TMc-31_mvdkm1_yulv13.jpg" alt="Family Pic" />
       </div>
