@@ -9,17 +9,12 @@ import styles from '../styles/navBar.module.css';
 import Link from 'next/link';
 
 export default function NavBar() {
-  let styleNav = {
-    display: "flex",
-    justifyContent: "flex-end",
-    backgroundColor: "transparent",
-  }
 
   return (
-    <div id="nav-bar-menu-selector" className={styles.navBarBox} style={styleNav}>
-        <Navbar bg="transparent" expand={false} className="mb-3">
+    <div className={styles.navBarBox}>
+        <Navbar bg="transparent" sticky='top' expand={false} className="mb-3">
           <Container fluid>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} className='test' />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} className='test' id={styles.navBarButton} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand`}
               aria-labelledby={`offcanvasNavbarLabel-expand`}

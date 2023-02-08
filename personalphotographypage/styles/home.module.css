@@ -1,16 +1,21 @@
 .homeContainer {
   display: flex;
+  /* background-color: rgb(42, 42, 42); */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
 }
-.homeImage {
+.carousel {
   display: flex;
-  position: relative;
-  height: auto;
-  margin-top: 3vh;
-  margin-bottom: 5vh;
+  /* opacity: .5; */
+  justify-content: center;
+  margin-top: 2vh;
+  width: 100vw;
+}
+#carouselImg {
+  object-fit: cover;
+  height: 80vh;
   width: 100vw;
 }
 .homeUnderIntroPhoto {

@@ -8,10 +8,14 @@
 .headerBanner {
   display: flex;
   font-style: italic;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
+  width: 100vw;
 }
 .title {
   display: block;
   font-size: 7vw;
   width: 80vw;
+  margin-right: -3vw;
 }
