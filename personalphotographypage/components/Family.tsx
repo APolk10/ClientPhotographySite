@@ -9,7 +9,7 @@ const Family = () => {
   const [gallery, setGallery] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/pictureAPI')
+    axios.get('http://localhost:3000/api/db')
       .then((res: AxiosResponse) => {
         let pics = res.data.resources.filter((image: any) => image.folder === 'Tim Photography/Family');
         setGallery(pics)

@@ -2,6 +2,7 @@
 import axios from 'axios';
 import type { NextApiRequest, NextApiResponse } from 'next'
 import NextCors from 'nextjs-cors';
+import imagesDB from './imagesDB';
 
 type Data = {
   data: string
@@ -25,6 +26,12 @@ export default async function handler(
   });
 
   axios.get(`${process.env.CLOUDINARY_QUERY}`)
-    .then(response => res.send(response.data))
-    .catch(err => console.error(err))
+    .then(response => {
+      const images = response.data.resources;
+      imagesDB(images);
+      res.send({data: 'Pictures successfully uploaded to database'});
+    })
+    .catch(error => {
+      res.send(error);
+    })
 }

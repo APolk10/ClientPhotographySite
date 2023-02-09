@@ -2,6 +2,7 @@
 import styles from 'styles/ImageGrid.module.css';
 import * as React from 'react';
 import Link from 'next/link';
+import axios from 'axios';
 
 const ImageGrid = () => {
 
