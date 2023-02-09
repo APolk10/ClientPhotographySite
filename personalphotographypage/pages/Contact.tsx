@@ -15,10 +15,4 @@ const Contact: NextPage = () => {
 
 export default Contact;
 
-/*
-What type of photos? (Wedding, Portraits, Family, General Inquiry)
-First/Last Name
-Email Address
-Phone Number
-Tell us more about what you're looking for
-*/
+
