@@ -1,5 +1,20 @@
 .navBarBox {
-  padding-top: 2vh;
-  position: relative;
-  left: 1vw;
+display: flex;
+align-items: center;
+position: sticky !important;
+}
+#navBarButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  margin-top: 2vh;
+  width: 10vw;
+  height: 14vh;
+  border: 3px solid rgb(102, 102, 102);
+  transition: ease-in-out .5s;
+}
+#navBarButton:hover {
+  background-color: gray;
+  transition: ease-in-out .5s;
 }

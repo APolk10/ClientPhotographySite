@@ -1,0 +1,38 @@
+.homeContainer {
+  display: flex;
+  /* background-color: rgb(42, 42, 42); */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.carousel {
+  display: flex;
+  /* opacity: .5; */
+  justify-content: center;
+  margin-top: 2vh;
+  width: 100vw;
+}
+#carouselImg {
+  object-fit: cover;
+  height: 80vh;
+  width: 100vw;
+}
+.homeUnderIntroPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+}
+#homeText {
+  font-size: 2vw;
+}
+.homeText {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+  width: 40vw;
+  font-size: 1.5vw;
+}
+
