@@ -4,6 +4,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { RESPONSE_LIMIT_DEFAULT } from 'next/dist/server/api-utils';
 import NextCors from 'nextjs-cors';
 import { resolve } from 'path';
+import {v2 as cloudinary} from 'cloudinary';
 
 
 type Data = {
@@ -16,8 +17,9 @@ export default async function handler(
   ) {
 
   const options = {
-    method: 'GET',
-    url: process.env.CLOUDINARY_QUERY
+    cloud_name: process.env.CLOUD_NAME,
+    api_key: process.env.API_KEY,
+    api_secret: process.env.API_SECRET
   }
 
   await NextCors(req, res, {
@@ -26,11 +28,7 @@ export default async function handler(
     optionsSuccessStatus: 200,
   });
 
-  try {
-    let response = await axios(options);
-    res.send(response.data);
-    return;
-  } catch (error: any) {
-    res.send({data: error})
-  }
+  axios.get(`${process.env.CLOUDINARY_QUERY}`)
+    .then(response => res.send(response.data))
+    .catch(err => console.error(err))
 }

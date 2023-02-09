@@ -30,18 +30,6 @@ export default function NavBar() {
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/Portfolio">Portfolios</Nav.Link>
                   <Nav.Link href="/Contact">Contact</Nav.Link>
-                  <NavDropdown
-                    title="Portfolios"
-                    id={`offcanvasNavbarDropdown-expand`}
-                  >
-                    <NavDropdown.Item href="#action3">Weddings</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Graduations
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action5">
-                      Family
-                    </NavDropdown.Item>
-                  </NavDropdown>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
