@@ -29,9 +29,9 @@ export default async function handler(
     .then(response => {
       const images = response.data.resources;
       imagesDB(images);
-      res.send({data: 'Pictures successfully uploaded to database'});
+      res.json({data: 'Pictures successfully uploaded to database'});
     })
     .catch(error => {
-      res.send(error);
+      res.end(error);
     })
 }
