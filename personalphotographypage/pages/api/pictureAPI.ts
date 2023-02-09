@@ -1,11 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import axios from 'axios';
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { RESPONSE_LIMIT_DEFAULT } from 'next/dist/server/api-utils';
 import NextCors from 'nextjs-cors';
-import { resolve } from 'path';
-import {v2 as cloudinary} from 'cloudinary';
-
 
 type Data = {
   data: string
