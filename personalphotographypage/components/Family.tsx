@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import axios, { AxiosResponse } from 'axios';
 import { resolve } from 'path';
-import Image from 'next/image';
 import styles from '../styles/images.module.css';
 
 
