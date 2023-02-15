@@ -19,7 +19,7 @@ const AboutMeComponent: React.FC = () => {
             <img
               id={styles.carouselImg}
               // className='d-block w-100'
-              src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040388/Tim%20Photography/Weddings/TMc-30_f7ftvb_of4qct.jpg'
+              src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476920/Tim%20Photography/Landscape/TIM_5648-min_p1xpz3.jpg'
               alt='slide one'
             />
           </Carousel.Item>
@@ -27,7 +27,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040386/Tim%20Photography/Weddings/TMc-41_w5uojv_lmhe9l.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476921/Tim%20Photography/Landscape/TIM_4355-min_xltc0z.jpg'
             alt='slide two'
             />
           </Carousel.Item>
@@ -35,7 +35,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040385/Tim%20Photography/Weddings/TMc-4_h751dp_gbaomu.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476916/Tim%20Photography/Landscape/TIM_3907-min_firc6e.jpg'
             alt='slide three'
             />
           </Carousel.Item>
@@ -43,7 +43,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040378/Tim%20Photography/Weddings/TMc-57_hn3ray_cx20hm.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476911/Tim%20Photography/Landscape/TIM_3535-min_bgpoig.jpg'
             alt='slide four'
             />
           </Carousel.Item>
@@ -51,7 +51,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040394/Tim%20Photography/Weddings/TMc-8_eesrzf_xst1bk.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476912/Tim%20Photography/Landscape/TIM_3462-min_krfgz2.jpg'
             alt='slide five'
             />
           </Carousel.Item>
