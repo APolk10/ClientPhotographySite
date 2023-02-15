@@ -10,12 +10,12 @@
   display: flex;
   /* opacity: .5; */
   justify-content: center;
-  margin-top: 2vh;
+  margin-top: 0vh;
   width: 100vw;
 }
 #carouselImg {
   object-fit: cover;
-  height: 80vh;
+  height: 105vh;
   width: 100vw;
 }
 .homeUnderIntroPhoto {

@@ -8,7 +8,7 @@ export default function NavBar() {
 
   return (
     <div className={styles.navBarBox}>
-        <Navbar bg="transparent" sticky='top' expand={false} className="mb-3">
+        <Navbar id={styles.navBarBox} fixed='top' expand={false} className="mb-3">
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} className='test' id={styles.navBarButton} />
             <Navbar.Offcanvas
@@ -17,8 +17,8 @@ export default function NavBar() {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
-                  Offcanvas
+                <Offcanvas.Title className={styles.navBarHeader} id={`offcanvasNavbarLabel-expand`}>
+                  My Work
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

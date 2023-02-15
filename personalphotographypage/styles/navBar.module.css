@@ -1,20 +1,32 @@
 .navBarBox {
-display: flex;
-align-items: center;
-position: sticky !important;
+  display: flex;
+  align-items: center;
+}
+#navBarBox {
+  margin-left: 85vw;
 }
 #navBarButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3vw;
-  margin-top: 2vh;
-  width: 10vw;
-  height: 14vh;
+  font-size: 2.25vw;
+  margin-left: 5vw;
+  margin-top: 1vh;
+  width: 6vw;
   border: 3px solid rgb(102, 102, 102);
+  background-color: whitesmoke;
   transition: ease-in-out .5s;
 }
 #navBarButton:hover {
-  background-color: gray;
+  background-color: rgb(77, 186, 40);
   transition: ease-in-out .5s;
+}
+
+.navBarHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2vw;
+  width: 25vw;
 }
