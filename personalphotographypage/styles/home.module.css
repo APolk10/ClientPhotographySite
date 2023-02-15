@@ -10,7 +10,7 @@
   display: flex;
   /* opacity: .5; */
   justify-content: center;
-  margin-top: 0vh;
+  border-top: solid gray 12vh;
   width: 100vw;
 }
 #carouselImg {

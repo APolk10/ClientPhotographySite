@@ -15,17 +15,18 @@ export default function NavBar() {
               id={`offcanvasNavbar-expand`}
               aria-labelledby={`offcanvasNavbarLabel-expand`}
               placement="end"
+              className={styles.offCanvasNavBar}
             >
-              <Offcanvas.Header closeButton>
+              <Offcanvas.Header className={styles.navBarHeaderBox} closeButton>
                 <Offcanvas.Title className={styles.navBarHeader} id={`offcanvasNavbarLabel-expand`}>
                   My Work
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="/Portfolio">Portfolios</Nav.Link>
-                  <Nav.Link href="/Contact">Contact</Nav.Link>
+                  <Nav.Link className={styles.navBarSelections} href="/">Home</Nav.Link>
+                  <Nav.Link className={styles.navBarSelections} href="/Portfolio">Portfolios</Nav.Link>
+                  <Nav.Link className={styles.navBarSelections} href="/Contact">Contact</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
