@@ -1,6 +1,6 @@
 // take the array of image objects and iterate through to add to database if not already present
-import Image from '../../models/imageModel';
-import connectMongo from '../../utils/connectMongo';
+import Image from '../../../models/imageModel';
+import connectMongo from '../../../utils/connectMongo';
 
 interface ImageShape {
   asset_id: String,
@@ -22,7 +22,7 @@ export default async function addImages(images: ImageShape[]) {
   console.log('Images successfully uploaded');
 }
 
-async function findImage(image: ImageShape) {
+export async function findImage(image: ImageShape) {
   const exists = await Image.findOne({id: image.asset_id});
   if (!exists) {
     Image.create({

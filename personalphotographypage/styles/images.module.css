@@ -1,4 +1,12 @@
 .imagesContainer {
   height: 70vh;
   overflow: auto;
+  padding: 10px;
+  justify-content: center;
 }
+
+.imagesContainer > img {
+  height: 20vh;
+  padding: 3px;
+}
+
