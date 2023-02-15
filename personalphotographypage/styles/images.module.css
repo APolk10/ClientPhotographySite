@@ -3,9 +3,10 @@
   overflow: auto;
   padding: 10px;
   justify-content: center;
+  position: relative;
 }
 
-.imagesContainer > img {
+.images {
   height: 20vh;
   padding: 3px;
 }
