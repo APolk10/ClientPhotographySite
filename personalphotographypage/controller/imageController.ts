@@ -13,6 +13,10 @@ const getFolderImages = catchAsyncError(async (req: NextApiRequest, res: NextApi
   const images = await Image.find({folder: `Tim Photography/${req.body.folder}`})
 
   res.status(200).json({images});
+});
+
+const getSingleImage = catchAsyncError(async (req: NextApiRequest, res: NextApiResponse) => {
+  const image = await Image.findOne()
 })
 
 export { getAllImages, getFolderImages };

@@ -1,5 +1,6 @@
 // take the array of image objects and iterate through to add to database if not already present
 import Image from '../../../models/imageModel';
+import axios from 'axios';
 import connectMongo from '../../../utils/connectMongo';
 
 interface ImageShape {
@@ -12,6 +13,14 @@ interface ImageShape {
   width: Number,
   height: Number
 }
+
+ axios.get(`${process.env.CLOUDINARY_QUERY}`)
+    .then(response => {
+      addImages(response.data.resources)
+    })
+    .catch(error => {
+      console.error(error);
+    })
 
 export default async function addImages(images: ImageShape[]) {
   await connectMongo();
@@ -37,3 +46,5 @@ export async function findImage(image: ImageShape) {
     })
   }
 }
+
+
