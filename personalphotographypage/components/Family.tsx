@@ -1,36 +1,27 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from 'react';
 import axios, { AxiosResponse } from 'axios';
 import { resolve } from 'path';
-import Image from 'next/image';
 import styles from '../styles/images.module.css';
+import Image from 'next/image';
 
-
-const Family = () => {
-  const [gallery, setGallery] = useState([])
-
-  useEffect(() => {
-    axios.get('http://localhost:3000/api/db')
-      .then((res: AxiosResponse) => {
-        let pics = res.data.resources.filter((image: any) => image.folder === 'Tim Photography/Family');
-        setGallery(pics)
-        resolve();
-      })
-      .catch((error) => {
-        console.error(error);
-      })
-  }, []);
-
-  return (
-    gallery.length > 0 ?
-    <div className={styles.imagesContainer}>
-      {gallery.map((image: any) => {
-        return <Image src={image.url} alt="Family photo" key={image.asset_id} height={100} width={100} className={styles.image}/>
-      })}
-    </div>
-    :
-    <div>No Photos Currently Available</div>
-
-  )
+interface Prop {
+  gallery: any []
 }
 
-export default Family;
+export default function Family({ gallery }: Prop) {
+  let element = gallery.length > 0 ? true : false;
+
+  if (element) {
+    return (
+      <div className={styles.imagesContainer}>
+        {gallery.map((image) => <Image src={image.url} alt="Family photo" key={image.asset_id} width={image.width / 20} height={image.height / 20} className={styles.images}/>)}
+      </div>)
+  } else {
+    return (
+      <div>
+        No photos Currently
+      </div>
+    )
+  }
+}
