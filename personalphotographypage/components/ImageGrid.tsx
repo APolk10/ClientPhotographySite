@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from 'styles/ImageGrid.module.css';
+import styles from 'styles/imageGrid.module.css';
 import * as React from 'react';
 import Link from 'next/link';
 
