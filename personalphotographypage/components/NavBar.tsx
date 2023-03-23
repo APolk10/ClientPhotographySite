@@ -23,7 +23,7 @@ export default function NavBar() {
                   MP
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Body className={styles.listBody}>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">
                     <div className={styles.navigationSelection}>

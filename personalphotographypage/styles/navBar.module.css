@@ -34,6 +34,9 @@
   font-family: 'Dancing Script', cursive;
   width: 25vw;
 }
+.listBody {
+  margin-top: -2vh;
+}
 .navigationSelection {
   display: flex;
   flex-direction: row;
@@ -47,12 +50,10 @@
 .navigationSelection:hover {
   padding-left: 4vw;
   transform: scale(1.25);
-  background-color: antiquewhite;
+  background-color: rgb(101, 193, 240);
 }
 .navigationTitles {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+padding-top: 1.25vh;
 }
 #navigationSelectionImage {
   width: 8%;
