@@ -11,8 +11,10 @@ export default function FamilyPortfolio({ data }: InferGetServerSidePropsType<ty
   )
 }
 
-export const getServerSideProps: GetServerSideProps<{data: any[]}> = async () => {
-  const response = await fetch('http://localhost:3000/api/images/pictureAPI');
+export const getServerSideProps: GetServerSideProps = async () => {
+  const response = await fetch('http://localhost:3000/api/images/pictureAPI', { method: "GET"})
+  /* this fetch never completes */
+  console.log('fetched');
   const data: Data = await response.json();
   const images = data.images.filter((image) => {
     return image.folder === "Tim Photography/Family"

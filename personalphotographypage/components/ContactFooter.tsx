@@ -4,8 +4,7 @@ import Link from 'next/link';
 const ContactFooter: React.FC = () => {
   return (
     <div className={styles.bar}>
-      <p>Mission statement/Short tidbit about Tims work</p>
-      <p>copyright @2022 by business name here</p>
+      <img src='https://cdn.pixabay.com/photo/2017/10/19/17/56/camera-2868622_960_720.png' width='60'></img>
       <Link href='/Contact'>Contact Me</Link>
     </div>
   )
