@@ -27,7 +27,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476921/Tim%20Photography/Landscape/TIM_4355-min_xltc0z.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040388/Tim%20Photography/Weddings/TMc-30_f7ftvb_of4qct.jpg'
             alt='slide two'
             />
           </Carousel.Item>
@@ -43,7 +43,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476910/Tim%20Photography/Landscape/TIM_0687-min_sdjmoj.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476921/Tim%20Photography/Landscape/TIM_4355-min_xltc0z.jpg'
             alt='slide four'
             />
           </Carousel.Item>
@@ -51,7 +51,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476912/Tim%20Photography/Landscape/TIM_3462-min_krfgz2.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040388/Tim%20Photography/Family/TMc-31_mvdkm1_yulv13.jpg'
             alt='slide five'
             />
           </Carousel.Item>
