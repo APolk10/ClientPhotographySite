@@ -37,17 +37,25 @@
 .navigationSelection {
   display: flex;
   flex-direction: row;
+  align-items: center;
   font-size: 2vw;
   font-family: 'Dancing Script', cursive;
   gap: 1vw;
-  width: 30vw;
+  width: 100%;
+  padding-left: 2vw;
 }
 .navigationSelection:hover {
-  margin-left: 4vw;
+  /* margin-left: 4vw; */
+  padding-left: 4vw;
   transform: scale(1.25);
+  background-color: antiquewhite;
+}
+.navigationTitles {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 #navigationSelectionImage {
-  margin-top: 1.2vh;
   width: 8%;
   height: 5.5%;
 }

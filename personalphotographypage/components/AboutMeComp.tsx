@@ -57,17 +57,19 @@ const AboutMeComponent: React.FC = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className={styles.homeUnderIntroPhoto}>
+      <div className={styles.homeIntroImageContainer}>
+        <div className={styles.homeUnderIntroPhoto}>
         <p id={styles.homeText} className={styles.homeText}>Welcome to my page!</p>
           <p className={styles.homeText}>
             From the joyous celebrations of weddings and engagements, to the precious first moments of bringing a newborn home. The unforgettable family events and the captivating beauty of landscapes. What began as an appetite to hold on to my own family&apos;s treasured memories has now transformed into a passion I am eager to share with the rest of the world.
           </p>
-          <p className={styles.homeText}>
+          <p id={styles.homeTextParaTwo} className={styles.homeText}>
             If you are looking for a photographer to help capture those special moments in your life, don&apos;t hesitate to reach out!
           </p>
           <div>
-            <Image className={styles.headshotImage} src='https://res.cloudinary.com/dijhxevwz/image/upload/v1666906690/timHeadshot_rf9aqm.jpg' width='400px' height='400px' alt=''/>
+            {/* <Image className={styles.headshotImage} src='https://res.cloudinary.com/dijhxevwz/image/upload/v1666906690/timHeadshot_rf9aqm.jpg' width='400px' height='400px' alt=''/> */}
           </div>
+        </div>
       </div>
     </div>
   )

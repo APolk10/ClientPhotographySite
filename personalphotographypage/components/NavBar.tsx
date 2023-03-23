@@ -28,19 +28,19 @@ export default function NavBar() {
                   <Nav.Link href="/">
                     <div className={styles.navigationSelection}>
                       <img id={styles.navigationSelectionImage} src='https://cdn.pixabay.com/photo/2017/10/19/17/56/camera-2868622_960_720.png' alt='noImage'></img>
-                      <p>&bull; Home</p>
+                      <p className={styles.navigationTitles}>&bull; Home</p>
                     </div>
                   </Nav.Link>
                   <Nav.Link className={styles.navBarSelections} href="/Portfolio">
                     <div className={styles.navigationSelection}>
                       <img id={styles.navigationSelectionImage} src='https://cdn.pixabay.com/photo/2017/10/19/17/56/camera-2868622_960_720.png' alt='noImage'></img>
-                      <p>&bull; Portfolios</p>
+                      <p className={styles.navigationTitles}>&bull; Portfolios</p>
                     </div>
                   </Nav.Link>
                   <Nav.Link className={styles.navBarSelections} href="/Contact">
                     <div className={styles.navigationSelection}>
                       <img id={styles.navigationSelectionImage} src='https://cdn.pixabay.com/photo/2017/10/19/17/56/camera-2868622_960_720.png' alt='noImage'></img>
-                      <p>&bull; Contact</p>
+                      <p className={styles.navigationTitles}>&bull; Contact</p>
                     </div>
                   </Nav.Link>
                 </Nav>
