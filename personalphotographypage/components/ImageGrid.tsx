@@ -8,7 +8,7 @@ const ImageGrid = () => {
   return (
     <div className={styles.portfolios}>
       <div className={styles.imageContainer}>
-        <div>
+        <div className={styles.gridContainer}>
           <h2>Family</h2>
           These are photos of families that I don&apos;t really know
         </div>
@@ -20,13 +20,13 @@ const ImageGrid = () => {
         <Link href="/WeddingsPortfolio">
           <img src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040378/Tim%20Photography/Weddings/TMc-6_ds7fot_dilcaq.jpg" alt="Wedding Pic" />
         </Link>
-        <div>
+        <div className={styles.gridContainer}>
           <h2>Weddings</h2>
           Behold the ceremony of love
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <div>
+        <div className={styles.gridContainer}>
           <h2>Holidays</h2>
           Just typing stuff down here for the hell of it.
         </div>

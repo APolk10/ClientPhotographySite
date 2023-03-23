@@ -45,7 +45,6 @@
   padding-left: 2vw;
 }
 .navigationSelection:hover {
-  /* margin-left: 4vw; */
   padding-left: 4vw;
   transform: scale(1.25);
   background-color: antiquewhite;

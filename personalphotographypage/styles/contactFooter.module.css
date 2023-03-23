@@ -2,7 +2,7 @@
   width: 100vw;
   height: 20vh;
   font-size: 1vw;
-  /* background-color: rgb(129, 129, 129); */
+  background-color:  rgb(61, 61, 61);
   border-top: solid 2px black;
   display: flex;
   flex-direction: column;
