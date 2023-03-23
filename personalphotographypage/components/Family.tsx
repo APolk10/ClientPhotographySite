@@ -10,9 +10,9 @@ interface Prop {
 }
 
 export default function Family({ gallery }: Prop) {
-  let element = gallery.length > 0 ? true : false;
-
-  if (element) {
+  // let element = gallery.length > 0 ? true : false;
+  console.log(gallery)
+  if (gallery) {
     return (
       <div className={styles.imagesContainer}>
         {gallery.map((image) => <Image src={image.url} alt="Family photo" key={image.asset_id} width={image.width / 20} height={image.height / 20} className={styles.images}/>)}

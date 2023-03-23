@@ -13,12 +13,13 @@
   margin-left: 5vw;
   margin-top: 1vh;
   width: 6vw;
-  border: 3px solid rgb(102, 102, 102);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 33%;
   background-color: whitesmoke;
   transition: ease-in-out .5s;
 }
 #navBarButton:hover {
-  background-color: rgb(77, 186, 40);
+  background-color: rgb(31, 138, 192);
   transition: ease-in-out .5s;
 }
 .navBarHeaderBox {
