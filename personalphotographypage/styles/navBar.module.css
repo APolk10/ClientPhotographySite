@@ -3,22 +3,19 @@
   align-items: center;
 }
 #navBarBox {
-  margin-left: 85vw;
-
+  margin-left: 90vw;
+  width: 15vw;
+  height: 10vh;
+  margin-top: .5vh;
 }
 #navBarButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.25vw;
-  margin-left: 5vw;
-  margin-top: 1vh;
-  width: 6vw;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 33%;
-  background-color: whitesmoke;
-
-  transition: ease-in-out .5s;
+  background-color: white;
+  height: 20%;
+  width: 33%;
+  font-size: 1.5vw;
 }
 #navBarButton:hover {
   background-color: rgb(31, 138, 192);
@@ -33,14 +30,24 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
+  font-family: 'Dancing Script', cursive;
   width: 25vw;
 }
-.navBarSelections {
-  font-size: 1.25vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
+.navigationSelection {
+  display: flex;
+  flex-direction: row;
+  font-size: 2vw;
+  font-family: 'Dancing Script', cursive;
+  gap: 1vw;
+  width: 30vw;
 }
-.navBarSelections:hover {
-  font-size: 1.5vw;
+.navigationSelection:hover {
+  margin-left: 4vw;
+  transform: scale(1.25);
+}
+#navigationSelectionImage {
+  margin-top: 1.2vh;
+  width: 8%;
+  height: 5.5%;
 }

@@ -8,6 +8,7 @@
   display: flex;
   position: fixed;
   font-style: italic;
+  font-family: 'Dancing Script', cursive;
   justify-content: space-between;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -23,7 +24,7 @@
 .title {
   display: flex;
   text-align: left;
-  font-size: 3vw;
+  font-size: 3.5vw;
   margin-top: 2.5vh;
   margin-left: -3vw;
   color: whitesmoke;
