@@ -22,7 +22,7 @@ interface ImageShape {
       console.error(error);
     })
 
-export default async function addImages(images: ImageShape[]) {
+export async function addImages(images: ImageShape[]) {
   await connectMongo();
 
   images.forEach((image) => {
