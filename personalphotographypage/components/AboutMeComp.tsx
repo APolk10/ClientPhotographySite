@@ -27,7 +27,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476921/Tim%20Photography/Landscape/TIM_4355-min_xltc0z.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040388/Tim%20Photography/Weddings/TMc-30_f7ftvb_of4qct.jpg'
             alt='slide two'
             />
           </Carousel.Item>
@@ -43,7 +43,7 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476911/Tim%20Photography/Landscape/TIM_3535-min_bgpoig.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476921/Tim%20Photography/Landscape/TIM_4355-min_xltc0z.jpg'
             alt='slide four'
             />
           </Carousel.Item>
@@ -51,20 +51,25 @@ const AboutMeComponent: React.FC = () => {
             <img
             id={styles.carouselImg}
             // className='d-block w-100'
-            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1676476912/Tim%20Photography/Landscape/TIM_3462-min_krfgz2.jpg'
+            src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040388/Tim%20Photography/Family/TMc-31_mvdkm1_yulv13.jpg'
             alt='slide five'
             />
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className={styles.homeUnderIntroPhoto}>
+      <div className={styles.homeIntroImageContainer}>
+        <div className={styles.homeUnderIntroPhoto}>
         <p id={styles.homeText} className={styles.homeText}>Welcome to my page!</p>
           <p className={styles.homeText}>
-            Among my friends I have always been the person to hold the camera. What started out as a hobby has quickly grown into something more. People want to hold on to their treasured memories, and I have been privilidged enough to help them. Taking photos of these happy moments and beautiful scenes brings me great joy and I am excited to share this passion with you. If you have any questions for me please reach out!
+            From the joyous celebrations of weddings and engagements, to the precious first moments of bringing a newborn home. The unforgettable family events and the captivating beauty of landscapes. What began as an appetite to hold on to my own family&apos;s treasured memories has now transformed into a passion I am eager to share with the rest of the world.
+          </p>
+          <p id={styles.homeTextParaTwo} className={styles.homeText}>
+            If you are looking for a photographer to help capture those special moments in your life, don&apos;t hesitate to reach out!
           </p>
           <div>
-            <Image className={styles.headshotImage} src='https://res.cloudinary.com/dijhxevwz/image/upload/v1666906690/timHeadshot_rf9aqm.jpg' width='400px' height='400px' alt=''/>
+            {/* <Image className={styles.headshotImage} src='https://res.cloudinary.com/dijhxevwz/image/upload/v1666906690/timHeadshot_rf9aqm.jpg' width='400px' height='400px' alt=''/> */}
           </div>
+        </div>
       </div>
     </div>
   )

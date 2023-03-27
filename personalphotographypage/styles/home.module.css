@@ -10,29 +10,43 @@
   display: flex;
   /* opacity: .5; */
   justify-content: center;
-  margin-top: 2vh;
+  border-top: solid gray 12vh;
   width: 100vw;
 }
 #carouselImg {
   object-fit: cover;
-  height: 80vh;
+  height: 105vh;
   width: 100vw;
+}
+.homeIntroImageContainer {
+  display: flex;
+  flex-direction: column;
+  border-top: solid black 5px;
+  background-image: url('https://pixabay.com/get/g788b08ce1e45beea2038af4ba36d76c8432db20adca70e01037a57550a913c2dab8025d720c5660417f864a93263f840dc14edd57e062066d1a501cd9b71b0133d52eb924ae99d048a5cbd811d13f813_1920.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
 }
 .homeUnderIntroPhoto {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80vw;
+  width: 45vw;
+  background-color: rgba(245, 245, 245, 0.539);
 }
 #homeText {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .homeText {
   margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
   text-align: center;
-  width: 40vw;
-  font-size: 1.5vw;
-}
+  width: 35vw;
+  font-size: 1.75vw;
+  font-family: 'Alkatra', cursive;
 
+}
+#homeTextParaTwo {
+  margin-bottom: 10vh;
+}

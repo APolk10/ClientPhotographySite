@@ -1,13 +1,28 @@
 .bar {
   width: 100vw;
-  height: 15vh;
+  height: 20vh;
   font-size: 1vw;
-  background-color: lightgray;
-  margin-top: 5vh;
+  background-color:  rgb(61, 61, 61);
+  border-top: solid 2px black;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
   align-items: center;
   position: relative;
   bottom: 0px;
+}
+#contactMe {
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+  background-color: whitesmoke;
+  border: solid 2px black;
+  color: rgb(0, 0, 0);
+  width: 20vw;
+  transition: .5s ease-in-out
+}
+#contactMe:hover {
+  cursor: pointer;
+  background-color: rgb(31, 138, 192);
 }
