@@ -22,7 +22,10 @@
   display: flex;
   flex-direction: column;
   border-top: solid black 5px;
-  background-image: url('https://pixabay.com/get/g788b08ce1e45beea2038af4ba36d76c8432db20adca70e01037a57550a913c2dab8025d720c5660417f864a93263f840dc14edd57e062066d1a501cd9b71b0133d52eb924ae99d048a5cbd811d13f813_1920.jpg');
+  background-image: url('https://res.cloudinary.com/dbvgiuj6d/image/upload/v1679955852/camera-g029ce0ef0_1920_qgkxqc.jpg');
+
+
+
   background-size: cover;
   width: 100vw;
   height: 100%;
