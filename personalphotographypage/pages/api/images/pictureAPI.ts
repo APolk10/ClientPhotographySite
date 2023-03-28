@@ -11,6 +11,6 @@ const handler = nc({ onError })
 
 handler.post(getFolderImages)
 
-handler.get(getAllImages);
+handler.get(getFolderImages);
 
 export default handler;
