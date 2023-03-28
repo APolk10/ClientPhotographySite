@@ -28,7 +28,7 @@ export const getServerSideProps = async () => {
   images.forEach((image: Image) =>
     {
       image.public_id = image.public_id.replace(/\s/, '%20');
-      image.url = `https://res.cloudinary.com/${process.env.CLOUD_NAME}/image/upload/v${image.version}/${image.public_id}.jpg`
+      image.url = `https://res.cloudinary.com/${process.env.CLOUD_NAME}/image/upload/c_scale,w_0.15/v${image.version}/${image.public_id}.jpg`
     })
 
   return {
