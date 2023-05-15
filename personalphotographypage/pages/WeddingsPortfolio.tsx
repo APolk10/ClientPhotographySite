@@ -12,6 +12,8 @@ interface Image {
   created_at: string
 }
 
+const port = process.env.port;
+
 export default function WeddingsPortfolio({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
 
   return (
@@ -20,7 +22,7 @@ export default function WeddingsPortfolio({ data }: InferGetServerSidePropsType<
 }
 
 export const getServerSideProps: GetServerSideProps<{data: any[]}> = async () => {
-  const response = await fetch('http://localhost:3000/api/images/getWeddingPhotos', { method: 'GET' });
+  const response = await fetch(`http://0.0.0.0:${port}/api/images/getWeddingPhotos`, { method: 'GET' });
   const images: Image[] = await response.json();
   images.forEach((image: Image) =>
     {
