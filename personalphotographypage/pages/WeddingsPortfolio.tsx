@@ -12,7 +12,7 @@ interface Image {
   created_at: string
 }
 
-const port = process.env.port;
+const port = process.env.PORT;
 
 export default function WeddingsPortfolio({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
 
