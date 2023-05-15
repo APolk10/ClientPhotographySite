@@ -23,8 +23,8 @@ export default function FamilyPortfolio({ data }: InferGetServerSidePropsType<ty
 }
 
 export const getServerSideProps = async () => {
-  const response = await fetch('http://localhost:3000/api/images/pictureAPI', { method: "GET"});
-  const images = await response.json();
+  const response = await fetch('http://localhost:3000/api/images/getFamilyPhotos', { method: "GET"});
+  const images: Image[] = await response.json();
   images.forEach((image: Image) =>
     {
       image.public_id = image.public_id.replace(/\s/, '%20');
