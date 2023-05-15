@@ -23,12 +23,12 @@ export default function FamilyPortfolio({ data }: InferGetServerSidePropsType<ty
 }
 
 export const getServerSideProps = async () => {
-  const response = await fetch('http://localhost:3000/api/images/pictureAPI', { method: "GET"});
-  const images = await response.json();
+  const response = await fetch('http://localhost:3000/api/images/getFamilyPhotos', { method: "GET"});
+  const images: Image[] = await response.json();
   images.forEach((image: Image) =>
     {
       image.public_id = image.public_id.replace(/\s/, '%20');
-      image.url = `https://res.cloudinary.com/${process.env.CLOUD_NAME}/image/upload/v${image.version}/${image.public_id}.jpg`
+      image.url = `https://res.cloudinary.com/${process.env.CLOUD_NAME}/image/upload/c_scale,w_0.15/v${image.version}/${image.public_id}.jpg`
     })
 
   return {

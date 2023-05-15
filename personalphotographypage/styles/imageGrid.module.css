@@ -1,11 +1,13 @@
 .imageContainer {
   display: flex;
-  padding: 10%;
-  align-content: center;
+  padding: 10% 5% 10% 5%;
+  justify-content: center;
   width: 100vw;
+  gap: 10%;
   border-bottom: 2px solid black;
   /* background-image: url('https://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_1920/v1668040386/Tim%20Photography/Family/TMc-38_jm5wek_uxglwi.jpg'); */
-  object-fit: contain;
+  background-color: rgba(30, 143, 255, 0.566);
+
 }
 
 .portfolios {
@@ -18,20 +20,19 @@
   width: 100vw;
   display: grid;
   grid-template-columns: auto auto;
-  gap: 25px 25px;
+  /* gap: 25px 25px; */
 }
 .gridContainer {
   background-color: rgba(245, 245, 245, 0.599);
   font-size: 2vw;
   gap: 5vw;
-  height: 60vh;
+  height: auto;
+  width: 40vw;
 }
 
 .imageContainer img {
   flex: 0.5;
   object-fit: cover;
-  width: 50vw;
-  margin-left: 10vw;
   height: 60vh;
 }
 
