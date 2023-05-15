@@ -16,6 +16,8 @@ interface Data {
   images: Image []
 }
 
+const port = process.env.PORT;
+
 export default function FamilyPortfolio({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <Family gallery={data}/>
@@ -23,7 +25,7 @@ export default function FamilyPortfolio({ data }: InferGetServerSidePropsType<ty
 }
 
 export const getServerSideProps = async () => {
-  const response = await fetch('http://localhost:3000/api/images/getFamilyPhotos', { method: "GET"});
+  const response = await fetch(`http://0.0.0.0:${port}/api/images/getFamilyPhotos`, { method: "GET"});
   const images: Image[] = await response.json();
   images.forEach((image: Image) =>
     {
