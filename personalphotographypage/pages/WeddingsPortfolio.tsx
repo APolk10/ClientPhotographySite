@@ -20,7 +20,7 @@ export default function WeddingsPortfolio({ data }: InferGetServerSidePropsType<
 }
 
 export const getServerSideProps: GetServerSideProps<{data: any[]}> = async () => {
-  const response = await fetch('http://localhost:3000/api/images/getWeddingPhotos', { method: 'GET' });
+  const response = await fetch('/api/images/getWeddingPhotos', { method: 'GET' });
   const images: Image[] = await response.json();
   images.forEach((image: Image) =>
     {
